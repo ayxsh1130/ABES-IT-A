@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 40px;
+    }
+    .card-container {
+      display: flex;
+      justify-content: center; /* center all cards */
+      gap: 20px; /* spacing between cards */
+      flex-wrap: wrap; /* let cards wrap on small screens */
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 250px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px); /* little hover effect */
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover; /* crop nicely */
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+    }
+    .card-content p {
+      margin: 0;
+      color: #555;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/f0/74/77/f07477486c698db94d704ec60fc0583f.jpg" alt="Image 1">
+      <div class="card-content">
+        <h3>Chad Xi Ping</h3>
+        <p>The giga-brained, iron-fisted meme version of China’s leader with absolute sigma aura.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/c5/86/67/c58667278ea64d93ec7e297fbf533648.jpg" alt="Image 2">
+      <div class="card-content">
+        <h3>Egyptian Homelander</h3>
+        <p>A sun-powered pharaoh of patriotism who smiles like a god but explodes like a nuke.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ec/de/11/ecde11accd4f8c980b71aebc7262e6a4.jpg" alt="Image 3">
+      <div class="card-content">
+        <h3>Al-Ronaldo</h3>
+        <p>The world’s fastest hat-trick scorer… and possibly on an FBI watchlist for celebrating too hard.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
