@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter App</title>
-    <style>
+    <!-- <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -72,11 +69,64 @@
         }
         .counter-btn:active {
             background: #1565c0;
+        } -->
+    <!-- </style> -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 32px;
+            margin-top: 60px;
+        }
+        .card {
+            background: #fff;
+            padding: 24px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            min-width: 280px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-section {
+            margin-bottom: 18px;
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.12);
+        }
+        .card button {
+            font-size: 1.1rem;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 8px;
+            background: #1976d2;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .card button:active {
+            background: #1565c0;
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
+    <!-- <div class="navbar">
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Logo" class="navbar-logo">
         <span class="navbar-title">Counter App</span>
     </div>
@@ -112,6 +162,37 @@
                 counterEl.textContent = count;
             }
         });
+    </script> -->
+    <div class="container">
+        
+        <div class="card">
+            <div class="card-title">Hide Image Card</div>
+            <div class="card-section" id="card1-img-section">
+                <img src="gin.jpg" alt="Logo" id="card1-img">
+            </div>
+            <div class="card-section">
+                <button id="card1-btn">Hide Image</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Change Image Card</div>
+            <div class="card-section">
+                <img src="gin1.jpg" alt="Logo" id="card2-img">
+            </div>
+            <div class="card-section">
+                <button id="card2-btn">Change Image</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('card1-btn').onclick = function(){
+            document.getElementById('card1-img-section').style.display= 'none';
+        };
+        document.getElementById('card2-btn').onclick = function(){
+            document.getElementById('card2-img').src = 'gin2.jpg';
+        };
     </script>
+
+
 </body>
 </html>
