@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
+    <!-- <style>
         #jp{
             border: 1px solid black;
             height:100px;
             width:100px;
             background-color: hotpink;
         }
-    </style>
+    </style> -->
 
 </head>
-<body>
+<body id="jp">
     <div id="jp">
-        <button onclick="example()">click me</button>
-        <p id="nt"></p>
+        <!-- <button onclick="example()">click me</button>
+        <p id="nt"></p> -->
+        <button onclick="red()">Red</button>
+        <button onclick="blue()">Blue</button>
+        <button onclick="green()">Green</button>
     </div>
     <script>
         // function abes(){
@@ -35,8 +38,17 @@
         //     document.write("<br>"+c);
         // }
         // sub();
-        function example(){
-            document.getElementById("nt").innerText="hii mays";
+        // function example(){
+        //     document.getElementById("nt").innerText="hii mays";
+        // }
+        function red(){
+            document.getElementById("jp").style.backgroundColor="red";
+        }
+        function blue(){
+            document.getElementById("jp").style.backgroundColor="blue";
+        }
+        function green(){
+            document.getElementById("jp").style.backgroundColor="green";
         }
     </script>
     
