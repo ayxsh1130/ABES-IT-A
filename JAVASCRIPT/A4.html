@@ -71,7 +71,7 @@
             background: #1565c0;
         } -->
     <!-- </style> -->
-    <style>
+    <!-- <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -123,6 +123,42 @@
             font-size: 1.2rem;
             margin-bottom: 12px;
         }
+    </style> -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        .piano-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .piano {
+            display: flex;
+            gap: 12px;
+        }
+        .key {
+            width: 70px;
+            height: 220px;
+            background: #fff;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 1.5rem;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.2s;
+            user-select: none;
+        }
+        .key:active {
+            background: #e3f2fd;
+        }
     </style>
 </head>
 <body>
@@ -163,7 +199,7 @@
             }
         });
     </script> -->
-    <div class="container">
+    <!-- <div class="container">
         
         <div class="card">
             <div class="card-title">Hide Image Card</div>
@@ -191,6 +227,36 @@
         document.getElementById('card2-btn').onclick = function(){
             document.getElementById('card2-img').src = 'gin2.jpg';
         };
+    </script> -->
+    <div class="piano-container">
+        <div class="piano">
+            <div class="key" data-note="C">C</div>
+            <div class="key" data-note="D">D</div>
+            <div class="key" data-note="E">E</div>
+            <div class="key" data-note="F">F</div>
+        </div>
+    </div>
+    <audio id="audioC" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6b2b7b7.mp3"></audio>
+    <audio id="audioD" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6b2b7b8.mp3"></audio>
+    <audio id="audioE" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6b2b7b9.mp3"></audio>
+    <audio id="audioF" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6b2b7ba.mp3"></audio>
+    <script>
+        const notes = {
+            C: document.getElementById('audioC'),
+            D: document.getElementById('audioD'),
+            E: document.getElementById('audioE'),
+            F: document.getElementById('audioF')
+        };
+
+        document.querySelectorAll('.key').forEach(key => {
+            key.addEventListener('click', () => {
+                const note = key.getAttribute('data-note');
+                if (notes[note]) {
+                    notes[note].currentTime = 0;
+                    notes[note].play();
+                }
+            });
+        });
     </script>
 
 
