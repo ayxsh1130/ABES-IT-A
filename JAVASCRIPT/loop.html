@@ -18,18 +18,31 @@
         //     document.write("hii mays<br>");
         //     b++;
         // }while(b<=10);
-        document.write("Table of 16:<br>");
+        document.write("Table of 7<br>");
         for(let i=1; i<=10; i++) {
-            let num = 16 * i;
-            let type = (num % 2 === 0) ? "even" : "odd";
-            document.write(`16 x ${i} = ${num} (${type})<br>`);
+            let num7 = 7 * i;
+            document.write(`7 x ${i} = ${num7} <br>`);
         }
 
-        document.write("<br>Table of 30:<br>");
+        document.write("<br>Table of 3:<br>");
         for(let i=1; i<=10; i++) {
-            let num = 30 * i;
-            let type = (num % 2 === 0) ? "even" : "odd";
-            document.write(`30 x ${i} = ${num} (${type})<br>`);
+            let num3 = 3 * i;
+            document.write(`3 x ${i} = ${num3} <br>`);
+        }
+        document.write("<br>even numbers:");
+        for(let i=1; i<=10; i++) {
+            let num7 = 7 * i;
+            if(num7 % 2 === 0) document.write(num7 + ",");
+            let num3 = 3 * i;
+            if(num3 % 2 === 0) document.write(num3 + ",");
+    }
+
+        document.write("<br>odd numbers:");
+        for(let i=1; i<=10; i++) {
+            let num7 = 7 * i;
+            if(num7 % 2 !== 0) document.write(num7 + ",");
+            let num3 = 3 * i;
+            if(num3 % 2 !== 0) document.write(num3 + ",");
         }
     </script>
 </body>
