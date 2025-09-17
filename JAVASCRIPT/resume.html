@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Richard Sanchez</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            width: 900px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            background: #18354a;
+            color: #fff;
+            width: 32%;
+            padding: 30px 20px;
+        }
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .sidebar h2 {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .sidebar p, .sidebar li {
+            font-size: 14px;
+            margin: 8px 0;
+        }
+        .sidebar h3 {
+            margin-top: 24px;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+        .main {
+            width: 68%;
+            padding: 30px 40px;
+        }
+        .main h1 {
+            font-size: 32px;
+            color: #18354a;
+            letter-spacing: 2px;
+        }
+        .main h2 {
+            font-size: 20px;
+            color: #4a6fa5;
+            margin-bottom: 20px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h3 {
+            font-size: 18px;
+            color: #18354a;
+            border-bottom: 2px solid #18354a;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .profile-text {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .job {
+            margin-bottom: 18px;
+        }
+        .job h4 {
+            font-size: 16px;
+            color: #18354a;
+            margin-bottom: 2px;
+        }
+        .job span {
+            float: right;
+            font-size: 13px;
+            color: gray;
+            font-weight: normal;
+        }
+        .job p {
+            font-size: 14px;
+            color: #4a6fa5;
+            margin-bottom: 5px;
+        }
+        .job ul {
+            margin-top: 5px;
+            padding-left: 18px;
+            list-style: disc;
+            color: #444;
+        }
+        .reference-block {
+            display: flex;
+            gap: 40px;
+        }
+        .reference-block p {
+            font-size: 14px;
+            color: #444;
+        }
+        .reference-block strong {
+            color: #18354a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="gin1.jpg" alt="Profile Picture">
+            <h2>CONTACT</h2>
+            <p>📞 +123-456-7890</p>
+            <p>✉️ hello@reallygreatsite.com</p>
+            <p>📍 123 Anywhere St., Any City</p>
+            <p>🌐 www.reallygreatsite.com</p>
+
+            <h3>EDUCATION</h3>
+            <p><strong>2029 - 2030</strong><br>ABES ENGINEERING COLLEGE<br>Master of Business Management</p>
+            <p><strong>2025 - 2029</strong><br>ABES ENGINEERING COLLEGE<br>Bachelor of Business<br>GPA: 3.8 / 4.0</p>
+
+            <h3>SKILLS</h3>
+            <ul>
+                <li>Project Management</li>
+                <li>Public Relations</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+                <li>Leadership</li>
+                <li>Effective Communication</li>
+                <li>Critical Thinking</li>
+            </ul>
+
+            <h3>LANGUAGES</h3>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>French (Fluent)</li>
+                <li>German (Basics)</li>
+                <li>Spanish (Intermediate)</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>RICHARD <span style="font-weight:normal;">SANCHEZ</span></h1>
+            <h2>MARKETING MANAGER</h2>
+            <div class="section">
+                <h3>PROFILE</h3>
+                <p class="profile-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Ut enim ad minim veniam quis nostrud exercitation.
+                </p>
+            </div>
+            <div class="section">
+                <h3>WORK EXPERIENCE</h3>
+                <div class="job">
+                    <h4>Borcelle Studio <span>2030 - PRESENT</span></h4>
+                    <p>Marketing Manager & Specialist</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam architecto, commodi.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, tempore.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, animi. Libero, sint!</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Fauget Studio <span>2025 - 2029</span></h4>
+                    <p>Marketing Manager & Specialist</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam architecto, commodi.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, tempore.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, animi. Libero, sint!</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Studio Shodwe <span>2024 - 2025</span></h4>
+                    <p>Marketing Manager & Specialist</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam architecto, commodi.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, tempore.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h3>REFERENCE</h3>
+                <div class="reference-block">
+                    <div>
+                        <p><strong>Estelle Darcy</strong><br>
+                        Wardiere Inc. / CTO<br>
+                        Phone: +123-456-7890<br>
+                        Email: hello@reallygreatsite.com</p>
+                    </div>
+                    <div>
+                        <p><strong>Harper Richard</strong><br>
+                        Wardiere Inc. / CEO<br>
+                        Phone: +123-456-7890<br>
+                        Email: hello@reallygreatsite.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
